@@ -18,7 +18,9 @@
 	  var list = $(settings.listSearchItems,settings.listID);
 	  
 	  $.each(list, function(i, val) {
-			$(val).attr("title",$(val).text());
+		  	if($(val).attr("title") == null){
+				$(val).attr("title",$(val).text());
+			}
 	  });
 	  
 	  input.bind("keyup",function(){
