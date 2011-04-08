@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>NizzleDev - searchInList Single List Demo</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/jQuery.searchInList.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#searchField').searchInList({
+		listID:"#demoList",
+		listSearchItems:".term",
+		parentToHide: ".searchItem"
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="searchForm">
+	<label>Search</label>
+	<input type="text" id="searchField" />
+</div>
+<div id="listContainter">
+    <ul id="demoList">
+        <li class="searchItem"><span class="term">Alabama</span></li>
+        <li class="searchItem"><span class="term">Alaska</span></li>
+        <li class="searchItem"><span class="term">Arizona</span></li>
+        <li class="searchItem"><span class="term">Arkansas</span></li>
+        <li class="searchItem"><span class="term">California</span></li>
+        <li class="searchItem"><span class="term">Colorado</span></li>
+        <li class="searchItem"><span class="term">Connecticut</span></li>
+        <li class="searchItem"><span class="term">D.C.</span></li>
+        <li class="searchItem"><span class="term">Delaware</span></li>
+        <li class="searchItem"><span class="term">Florida</span></li>
+        <li class="searchItem"><span class="term">Georgia</span></li>
+        <li class="searchItem"><span class="term">Hawaii</span></li>
+        <li class="searchItem"><span class="term">Idaho</span></li>
+        <li class="searchItem"><span class="term">Illinois</span></li>
+        <li class="searchItem"><span class="term">Indiana</span></li>
+        <li class="searchItem"><span class="term">Iowa</span></li>
+        <li class="searchItem"><span class="term">Kansas</span></li>
+        <li class="searchItem"><span class="term">Kentucky</span></li>
+        <li class="searchItem"><span class="term">Louisiana</span></li>
+        <li class="searchItem"><span class="term">Maine</span></li>
+        <li class="searchItem"><span class="term">Maryland</span></li>
+        <li class="searchItem"><span class="term">Massachusetts</span></li>
+        <li class="searchItem"><span class="term">Michigan</span></li>
+        <li class="searchItem"><span class="term">Minnesota</span></li>
+        <li class="searchItem"><span class="term">Mississippi</span></li>
+        <li class="searchItem"><span class="term">Missouri</span></li>
+        <li class="searchItem"><span class="term">Montana</span></li>
+        <li class="searchItem"><span class="term">Nebraska</span></li>
+        <li class="searchItem"><span class="term">Nevada</span></li>
+        <li class="searchItem"><span class="term">New Hampshire</span></li>
+        <li class="searchItem"><span class="term">New Mexico</span></li>
+        <li class="searchItem"><span class="term">New York</span></li>
+        <li class="searchItem"><span class="term">New Jersey</span></li>
+        <li class="searchItem"><span class="term">North Carolin</span></li>
+        <li class="searchItem"><span class="term">North Dakota</span></li>
+        <li class="searchItem"><span class="term">Ohio</span></li>
+        <li class="searchItem"><span class="term">Oklahoma</span></li>
+        <li class="searchItem"><span class="term">Oregon</span></li>
+        <li class="searchItem"><span class="term">Pennsylvania</span></li>
+        <li class="searchItem"><span class="term">Rhode Island</span></li>
+        <li class="searchItem"><span class="term">South Carolina</span></li>
+        <li class="searchItem"><span class="term">South Dakota</span></li>
+        <li class="searchItem"><span class="term">Tennessee</span></li>
+        <li class="searchItem"><span class="term">Texas</span></li>
+        <li class="searchItem"><span class="term">Utah</span></li>
+        <li class="searchItem"><span class="term">Vermont</span></li>
+        <li class="searchItem"><span class="term">Virginia</span></li>
+        <li class="searchItem"><span class="term">Washington</span></li>
+        <li class="searchItem"><span class="term">West Virginia</span></li>
+        <li class="searchItem"><span class="term">Wisconsin</span></li>
+        <li class="searchItem"><span class="term">Wyoming</span></li>
+    </ul>
+</div>
+</body>
+</html>
