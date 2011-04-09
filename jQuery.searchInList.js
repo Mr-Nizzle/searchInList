@@ -18,7 +18,7 @@
 	  var list = $(settings.listSearchItems,settings.listID);
 	  
 	  $.each(list, function(i, val) {
-		  	if($(val).attr("title") == null){
+		  	if(!($(val).attr("title"))){
 				$(val).attr("title",$(val).text());
 			}
 	  });
