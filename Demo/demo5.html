@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>NizzleDev - searchInList Complex list Demo > Initialy Hidden</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/jQuery.searchInList.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#searchField').searchInList({
+		listID:"#demoList",
+		listSearchItems:".term",
+		parentToHide: ".searchItem",
+                hidden: true
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="searchForm">
+	<label>Search</label>
+	<input type="text" id="searchField" />
+</div>
+<div id="listContainter">
+    <ul id="demoList">
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Alabama</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Alaska</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Arizona</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Arkansas</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />California</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Colorado</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Connecticut</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />D.C.</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Delaware</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Florida</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Georgia</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Hawaii</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Idaho</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Illinois</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Indiana</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Iowa</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Kansas</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Kentucky</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Louisiana</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Maine</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Maryland</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Massachusetts</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Michigan</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Minnesota</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Mississippi</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Missouri</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Montana</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Nebraska</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Nevada</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />New Hampshire</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />New Mexico</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />New York</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />New Jersey</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />North Carolin</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />North Dakota</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Ohio</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Oklahoma</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Oregon</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Pennsylvania</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Rhode Island</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />South Carolina</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />South Dakota</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Tennessee</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Texas</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Utah</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Vermont</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Virginia</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Washington</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />West Virginia</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Wisconsin</span></li>
+        <li class="searchItem"><span class="term"><img src="images/usa-icon.png" align="middle" hspace="5" />Wyoming</span></li>
+    </ul>
+</div>
+</body>
+</html>

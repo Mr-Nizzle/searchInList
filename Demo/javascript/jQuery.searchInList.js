@@ -21,12 +21,20 @@
 	  $.each(list, function(i, val) {
 		  	if(!($(val).attr("title"))){
 				$(val).attr("title",$(val).text());
-			}
-			if(settings.hidden)
-			{
-				$(val).hide();
-			}
+			}	
 	  });
+
+	if(settings.hidden)
+	{	
+		if(settings.parentToHide == null)
+		{
+			$(list).hide();
+		}
+		else{
+			$(list).closest(settings.parentToHide).hide();
+		}
+	}
+
 	  
 	  input.bind("keyup",function(){
 		
@@ -62,11 +70,23 @@
 		{
 			if (settings.hidden)
 			{
-				$(list).hide();
+				if(settings.parentToHide == null)
+				{
+					$(list).hide();
+				}
+				else{
+					$(list).closest(settings.parentToHide).hide();
+				}
 			}
 			else
 			{
-				$(list).show();	
+				if(settings.parentToHide == null)
+				{
+					$(list).show();
+				}
+				else{
+					$(list).closest(settings.parentToHide).show();
+				}
 			}
 		}
 	  });
