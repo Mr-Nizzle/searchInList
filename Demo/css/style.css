@@ -13,6 +13,9 @@ ul#demoList li{
 	border:1px solid #CCC;
 	background-color:#E0E0E0;
 }
+ul#demoList.hidden li{
+	display:none;
+}
 ul#demoList li:hover{
 	background-color:#EEE;
 }

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>NizzleDev - searchInList Single List Demo > Initialy Hidden</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/jQuery.searchInList.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#searchField').searchInList({
+		listID: "#demoList",
+		listSearchItems: ".term",
+                hidden: true
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="searchForm">
+	<label>Search</label>
+	<input type="text" id="searchField" />
+</div>
+<div id="listContainter">
+    <ul id="demoList" class="hidden">
+        <li class="term">Alabama</li>
+        <li class="term">Alaska</li>
+        <li class="term">Arizona</li>
+        <li class="term">Arkansas</li>
+        <li class="term">California</li>
+        <li class="term">Colorado</li>
+        <li class="term">Connecticut</li>
+        <li class="term">D.C.</li>
+        <li class="term">Delaware</li>
+        <li class="term">Florida</li>
+        <li class="term">Georgia</li>
+        <li class="term">Hawaii</li>
+        <li class="term">Idaho</li>
+        <li class="term">Illinois</li>
+        <li class="term">Indiana</li>
+        <li class="term">Iowa</li>
+        <li class="term">Kansas</li>
+        <li class="term">Kentucky</li>
+        <li class="term">Louisiana</li>
+        <li class="term">Maine</li>
+        <li class="term">Maryland</li>
+        <li class="term">Massachusetts</li>
+        <li class="term">Michigan</li>
+        <li class="term">Minnesota</li>
+        <li class="term">Mississippi</li>
+        <li class="term">Missouri</li>
+        <li class="term">Montana</li>
+        <li class="term">Nebraska</li>
+        <li class="term">Nevada</li>
+        <li class="term">New Hampshire</li>
+        <li class="term">New Mexico</li>
+        <li class="term">New York</li>
+        <li class="term">New Jersey</li>
+        <li class="term">North Carolin</li>
+        <li class="term">North Dakota</li>
+        <li class="term">Ohio</li>
+        <li class="term">Oklahoma</li>
+        <li class="term">Oregon</li>
+        <li class="term">Pennsylvania</li>
+        <li class="term">Rhode Island</li>
+        <li class="term">South Carolina</li>
+        <li class="term">South Dakota</li>
+        <li class="term">Tennessee</li>
+        <li class="term">Texas</li>
+        <li class="term">Utah</li>
+        <li class="term">Vermont</li>
+        <li class="term">Virginia</li>
+        <li class="term">Washington</li>
+        <li class="term">West Virginia</li>
+        <li class="term">Wisconsin</li>
+        <li class="term">Wyoming</li>
+    </ul>
+</div>
+</body>
+</html>

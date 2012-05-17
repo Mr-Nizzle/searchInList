@@ -5,7 +5,8 @@
     var settings = {
 		'listID'			:	'#searchableList',
       	'listSearchItems'	:	'.terms',
-		'parentToHide'		:	null
+		'parentToHide'		:	null,
+		'hidden'			: 	false
     };
 
     return this.each(function() {
@@ -21,36 +22,53 @@
 		  	if(!($(val).attr("title"))){
 				$(val).attr("title",$(val).text());
 			}
+			if(settings.hidden)
+			{
+				$(val).hide();
+			}
 	  });
 	  
 	  input.bind("keyup",function(){
 		
-		var searchTerm = input.attr('value').toLowerCase();
-		
-		$.each(list, function(i, val) {
-			
-			var orival = $(val).attr("title").toLowerCase();
-			
-			if(orival.search(searchTerm) >= 0){
-				if(settings.parentToHide == null)
-				{
-					$(val).show();
+		var searchTerm = $.trim(input.attr('value').toLowerCase());
+
+		if(searchTerm != "")
+		{	
+			$.each(list, function(i, val) {
+				
+				var orival = $(val).attr("title").toLowerCase();
+				
+				if(orival.search(searchTerm) >= 0){
+					if(settings.parentToHide == null)
+					{
+						$(val).show();
+					}
+					else{
+						$(val).closest(settings.parentToHide).show();
+					}
 				}
 				else{
-					$(val).closest(settings.parentToHide).show();
+					if(settings.parentToHide == null)
+					{
+						$(val).hide();
+					}
+					else{
+						$(val).closest(settings.parentToHide).hide();
+					}
 				}
+			});
+		}
+		else
+		{
+			if (settings.hidden)
+			{
+				$(list).hide();
 			}
-			else{
-				if(settings.parentToHide == null)
-				{
-					$(val).hide();
-				}
-				else{
-					$(val).closest(settings.parentToHide).hide();
-				}
+			else
+			{
+				$(list).show();	
 			}
-		});
-		
+		}
 	  });
 
     });
