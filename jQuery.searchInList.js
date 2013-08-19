@@ -38,7 +38,7 @@
 	  
 	  input.bind("keyup",function(){
 		
-		var searchTerm = $.trim(input.attr('value').toLowerCase());
+		var searchTerm = $.trim(input.val().toLowerCase());
 
 		if(searchTerm != "")
 		{	
